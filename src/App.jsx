@@ -8,38 +8,39 @@ import Heading from './Heading';
 import ColorsList from './ColorsList';
 import Slots from './Slots';
 import ShoppingList from './ShoppingList';
+import PropertyList from './PropertyList';
 
-const data = [
+const properties = [
   {
-    id: 1,
-    itemName: 'eggs',
-    quanatiy: 12,
-    completed: false,
+    id: 1111,
+    name: 'Desurt Yurt',
+    ratings: 5,
+    price: 230,
   },
   {
-    id: 2,
-    itemName: 'juice',
-    quanatiy: 1,
-    completed: true,
+    id: 1112,
+    name: 'KingsBridge Park',
+    ratings: 2.4,
+    price: 1000,
   },
   {
-    id: 3,
-    itemName: 'chicken legs',
-    quanatiy: 4,
-    completed: false,
+    id: 1113,
+    name: 'Sugar Land',
+    ratings: 3.3,
+    price: 500,
   },
   {
-    id: 4,
-    itemName: 'carrots',
-    quanatiy: 8,
-    completed: true,
+    id: 1114,
+    name: 'Memorial',
+    ratings: 4.8,
+    price: 18900,
   },
 ];
 
 function App() {
   return (
     <>
-      <ShoppingList items={data} />
+      <PropertyList properties={properties} />
     </>
   );
 }
