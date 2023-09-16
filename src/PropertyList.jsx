@@ -8,6 +8,7 @@ export default function PropertyList({ properties }) {
     padding: '10px',
     width: '80vw',
   };
+
   return (
     <div style={styles}>
       {properties.map((property) => (
