@@ -6,15 +6,12 @@ import ListPicker from './ListPicker';
 import DoubleDiceRoll from './DoubleDiceRoll';
 import Heading from './Heading';
 import ColorsList from './ColorsList';
+import Slots from './Slots';
 
 function App() {
   return (
     <>
-      <Heading text={'Welcome'} />
-      <DoubleDiceRoll />
-      <ColorsList
-        colors={['red', 'green', 'blue', 'yellow', 'orange', 'black']}
-      />
+      <Slots val1="🤣" val2="🤣" val3="🤣" />
     </>
   );
 }
