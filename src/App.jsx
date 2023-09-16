@@ -11,22 +11,26 @@ import ShoppingList from './ShoppingList';
 
 const data = [
   {
-    item: 'eggs',
+    id: 1,
+    itemName: 'eggs',
     quanatiy: 12,
     completed: false,
   },
   {
-    item: 'juice',
+    id: 2,
+    itemName: 'juice',
     quanatiy: 1,
     completed: true,
   },
   {
-    item: 'chicken legs',
+    id: 3,
+    itemName: 'chicken legs',
     quanatiy: 4,
     completed: false,
   },
   {
-    item: 'carrots',
+    id: 4,
+    itemName: 'carrots',
     quanatiy: 8,
     completed: true,
   },

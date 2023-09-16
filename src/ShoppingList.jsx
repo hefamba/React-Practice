@@ -1,16 +1,12 @@
 import React from 'react';
+import ShoppingListItem from './ShoppingListItem';
 
 export default function ShoppingList({ items }) {
   return (
     <div>
       <ul>
         {items.map((item) => (
-          <li
-            style={{
-              textDecoration: item.completed ? 'line-through' : 'none',
-            }}>
-            {item.item} - {item.quanatiy}
-          </li>
+          <ShoppingListItem key={item.id} {...item} />
         ))}
       </ul>
     </div>
