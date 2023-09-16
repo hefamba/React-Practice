@@ -9,7 +9,8 @@ import ColorsList from './ColorsList';
 import Slots from './Slots';
 import ShoppingList from './ShoppingList';
 import PropertyList from './PropertyList';
-
+import Clicker from './Clicker';
+import Form from './Form';
 const properties = [
   {
     id: 1111,
@@ -40,7 +41,8 @@ const properties = [
 function App() {
   return (
     <>
-      <PropertyList properties={properties} />
+      <Clicker message="Heyyyy😉" btnText="Click Me" />
+      <Clicker message="BOI IF YOU DONT STOP" btnText="RED BUTTON" />
     </>
   );
 }
