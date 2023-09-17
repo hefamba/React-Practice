@@ -53,6 +53,7 @@ const colors = [
   'brown',
   'teal',
   'gray',
+  'teal',
 ];
 
 function App() {
