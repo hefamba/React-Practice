@@ -54,6 +54,7 @@ const colors = [
   'teal',
   'gray',
   'teal',
+  'lightblue',
 ];
 
 function App() {
