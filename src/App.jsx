@@ -13,6 +13,8 @@ import Clicker from './Clicker';
 import Form from './Form';
 import Counter from './Counter';
 import Toggler from './Toggler';
+import ColorBox from './ColorBox';
+import ColorBoxGrid from './ColorBoxGrid';
 const properties = [
   {
     id: 1111,
@@ -40,10 +42,23 @@ const properties = [
   },
 ];
 
+const colors = [
+  'red',
+  'blue',
+  'green',
+  'yellow',
+  'purple',
+  'orange',
+  'pink',
+  'brown',
+  'teal',
+  'gray',
+];
+
 function App() {
   return (
     <>
-      <Toggler />
+      <ColorBoxGrid colors={colors} />
     </>
   );
 }
