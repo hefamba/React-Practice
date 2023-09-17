@@ -11,6 +11,7 @@ import ShoppingList from './ShoppingList';
 import PropertyList from './PropertyList';
 import Clicker from './Clicker';
 import Form from './Form';
+import Counter from './Counter';
 const properties = [
   {
     id: 1111,
@@ -41,8 +42,7 @@ const properties = [
 function App() {
   return (
     <>
-      <Clicker message="Heyyyy😉" btnText="Click Me" />
-      <Clicker message="BOI IF YOU DONT STOP" btnText="RED BUTTON" />
+      <Counter />
     </>
   );
 }
