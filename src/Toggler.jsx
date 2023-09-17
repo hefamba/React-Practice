@@ -8,6 +8,11 @@ export default function Toggler() {
   const addByTwo = () => {
     setCount(count + 2);
   };
+  const subtractByOne = () => {
+    if (count !== 0) {
+      setCount(count - 1);
+    }
+  };
 
   const toggleEmotion = () => {
     setIsHappy(!isHappy);
@@ -17,7 +22,8 @@ export default function Toggler() {
       <h1>{isHappy ? '😉' : '😭'}</h1>
       <button onClick={toggleEmotion}>Click me instead</button>
       <h3>{count}</h3>
-      <button onClick={addByTwo}>Add By 2!</button>
+      <button onClick={subtractByOne}>-</button>
+      <button onClick={addByTwo}>+</button>
     </div>
   );
 }
