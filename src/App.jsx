@@ -12,6 +12,7 @@ import PropertyList from './PropertyList';
 import Clicker from './Clicker';
 import Form from './Form';
 import Counter from './Counter';
+import Toggler from './Toggler';
 const properties = [
   {
     id: 1111,
@@ -42,7 +43,7 @@ const properties = [
 function App() {
   return (
     <>
-      <Counter />
+      <Toggler />
     </>
   );
 }
