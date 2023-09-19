@@ -15,6 +15,7 @@ import Counter from './Counter';
 import Toggler from './Toggler';
 import ColorBox from './ColorBox';
 import ColorBoxGrid from './ColorBoxGrid';
+import ChuckNorrisJoke from './ChuckNorrisJoke';
 const properties = [
   {
     id: 1111,
@@ -60,7 +61,7 @@ const colors = [
 function App() {
   return (
     <>
-      <ColorBoxGrid colors={colors} />
+      <ChuckNorrisJoke />
     </>
   );
 }
