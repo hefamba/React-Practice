@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import LoadingDisplay from './LoadingDisplay';
 
 export default function ChuckNorrisJoke() {
   const url = 'https://api.chucknorris.io/jokes/random';
@@ -9,7 +10,11 @@ export default function ChuckNorrisJoke() {
     },
   };
 
-  const [joke, setJoke] = useState('// display Joke here');
+  const [joke, setJoke] = useState('');
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    fetchJoke();
+  }, []);
 
   const fetchJoke = async () => {
     const res = await fetch(url);
@@ -18,10 +23,12 @@ export default function ChuckNorrisJoke() {
 
     console.log('joke gererated');
     setJoke(randonJoke);
+    setIsLoading(false);
   };
   return (
     <div>
-      <h1>Chuck Norris Joke</h1>
+      {isLoading && <p>Loading...</p>}
+      <h1 style={{ color: 'goldenrod' }}>Chuck Norris Joke</h1>
       {joke}
       <button onClick={fetchJoke}>Generate Joke</button>
     </div>
